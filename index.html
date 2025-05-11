@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sbyle.css">
+</head>
+<body class="bg-gray-100 font-inter">
+    <header>
+        <div class="container">
+            <h1>Events in Sydney</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="event-list">
+            <div class="event-card">
+                <h2>Loading...</h2>
+                <p>Please wait while we fetch the latest events.</p>
+            </div>
+        </section>
+
+        <section id="newsletter-signup">
+            <div class="text-center">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Stay updated with the latest events in Sydney!</p>
+                <button id="newsletter-button">Get Updates</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sydney Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="emailModalBackdrop"></div>
+    <div id="emailModal">
+        <h2>Get Tickets & Stay Updated</h2>
+        <p>Enter your email to receive the ticket link and future event updates:</p>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <div id="emailError"></div>
+        <div class="modal-buttons">
+            <button id="submitEmailButton">Get Tickets</button>
+            <button id="cancelEmailButton">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
